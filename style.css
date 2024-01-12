@@ -26,6 +26,7 @@
 .container {
   background-color: white;
   /* height: 80px; */
+  padding: 0px;
 }
 .nav-item {
   color: #000;
@@ -511,7 +512,7 @@ transition: all .3s ease-in-out;
   font-weight: 700
 }
 /* row_11 */
-.container{
+.row_11  .container{
    display: flex;
    justify-content: center;
    padding: 60px 0 60px 60px;
@@ -535,26 +536,28 @@ transition: all .3s ease-in-out;
 .left a:hover{
   color:#002970
 }
+.outerContainer {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+}
 .right{
   display: flex;
-  align-items: center;
-  overflow-x: scroll;
+  align-items: center; 
+  overflow-x: auto;
   white-space: nowrap;
-  scroll-behavior: smooth;
-}
-/* .right::-webkit-scrollbar{
+  padding: 10px;
+ }
+.right::-webkit-scrollbar {
   display: none;
+} 
 
-} */
-.flow{
-  display: none;
-}
 .right .line{
+  height: 150px;
+  background: #00baf2;
   border-radius: 10px;
-    background: #00baf2;
     opacity: .7;
     padding: 5px 0;
-    white-space: normal;
     text-align: center;
     cursor: pointer;
     width: 155px;
@@ -562,28 +565,32 @@ transition: all .3s ease-in-out;
     min-width: 155px;
     min-height: 230px;
     margin-right: 30px;
-    transition:  opacity .2s ease ;
+    transition:  opacity .2s ease ; 
+
 }
 .right .line img{
   width: 145px;
   margin-bottom: 20px;
 }
 .flow{
-  border-radius: 50%;
+    border-radius: 50%;
     border: 2px solid  #00baf2;
-    height: 40px;
-    width: 40px; 
+     height: 40px;
+    width: 40px;  
     padding: 1rem;
     text-align: center;
     margin: auto;
-    overflow: visible;
+    /* overflow: visible; */
     position: absolute;
+    top: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #00baf2;
     background-color: #fff;
     transition: border 2ms ease ,color 2ms ease;
+    z-index: 1;
+
 }
 .flow:hover{
   border: 2px solid  blue;
@@ -599,4 +606,101 @@ transition: all .3s ease-in-out;
   font-size: 17px;
   color: white;
   font-weight: 700;
+}
+
+#outerContainer {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+}
+
+#scrollRight {
+  right: 10px;
+}
+
+/* row 12 */
+.row_12  .container{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 60px 60px;
+
+}
+ .row_12 .right .line img{
+  width: 72px;
+  margin-bottom: 20px;
+}
+.row_12 .right .line{
+  text-align: left;
+  padding: 30px 11px 11px;
+
+}
+#scrollRight1 {
+  right: 10px;
+}
+/* last row */
+.row_last{
+  background: #f5f7fa;
+  padding: 90px 0 0;
+  
+}
+.row_last .container{
+  background: #f5f7fa;
+
+}
+.upper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 60px;
+}
+.upper .logo{
+  display: flex;
+}
+.logo .text{
+  font-size: 20px;
+  color:#000000;
+  font-weight: 600;
+  width: 250px;
+}
+.upper .icons i{
+  font-size: 24px;
+  margin-right: 30px;
+  color: #707070;
+}
+.lower{
+  width: 80%;
+}
+.acc-title{
+    padding: 15px 0px;
+
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+
+}
+#cross , #plus{
+  margin-right:8px;
+}
+#cross{
+  display: none;
+}
+.acc-des{
+  display: none;
+}
+.acc-des ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.acc-des ul li{
+  list-style: none;
+
 }
