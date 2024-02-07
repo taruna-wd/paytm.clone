@@ -525,7 +525,6 @@ transition: all .3s ease-in-out;
 }
 .left img{
   width: 160px;
-  margin-bottom: 40px;
 }
 .left a{
   list-style: none;
@@ -568,7 +567,7 @@ transition: all .3s ease-in-out;
     transition:  opacity .2s ease ; 
 
 }
-.right .line img{
+   .right .line img{
   width: 145px;
   margin-bottom: 20px;
 }
