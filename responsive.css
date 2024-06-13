@@ -331,6 +331,11 @@
     flex-basis: 0%; 
      margin-right: 10px;
   }
+  .outerContainer {
+    position: relative;
+    overflow: hidden;
+    width: 94%;
+}
   .row_12 .container {
      display: flex;
     flex-wrap: wrap;
